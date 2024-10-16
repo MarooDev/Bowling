@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra w Kręgle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gra w Kręgle</h1>
+        <form id="rollForm">
+            <label for="pins">Podaj liczbę strąconych kręgli:</label>
+            <input type="number" id="pins" name="pins" min="0" max="10" required>
+            <button type="submit">Rzuć</button>
+        </form>
+        <p id="currentScore">Aktualny wynik: 0</p>
+        <p id="gameOverMessage" style="display: none; color: red; font-weight: bold; text-align: center;">Gra
+            zakończona! Dziękujemy za grę.</p>
+        <button id="resetButton" style="display: none;">Zagraj jeszcze raz</button>
+        <div id="frames"></div>
+    </div>
+</body>
+
+</html>
